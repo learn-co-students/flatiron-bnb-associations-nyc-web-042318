@@ -33,10 +33,10 @@ ActiveRecord::Schema.define(version: 6) do
   end
 
   create_table "reservations", force: :cascade do |t|
-    t.string  "checkin"
-    t.string  "checkout"
-    t.integer "guest_id"
-    t.integer "listing_id"
+    t.time     "checkin"
+    t.datetime "checkout"
+    t.integer  "guest_id"
+    t.integer  "listing_id"
   end
 
   create_table "reviews", force: :cascade do |t|
