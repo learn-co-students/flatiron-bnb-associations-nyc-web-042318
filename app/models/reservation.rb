@@ -4,12 +4,12 @@ class Reservation < ActiveRecord::Base
   belongs_to :listing
 
   def checkout
-    d=super
-    Date.parse(d)
+    Date.parse(super)
+
   end
 
   def checkin
-    d=super
-    Date.parse(d)
+    Date.parse(super)
+
   end
 end
