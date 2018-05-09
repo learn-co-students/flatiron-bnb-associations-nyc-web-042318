@@ -73,6 +73,7 @@ describe Listing do
     end
 
     it 'knows about all of its guests' do
+      # binding.pry
       expect(listing.guests).to include(logan)
     end
   end
